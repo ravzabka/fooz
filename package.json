@@ -1,0 +1,20 @@
+{
+	"name": "fooz",
+	"description": "test",
+	"version": "1.0.0",
+	"author": "Rafał Porowski",
+	"main": "index.js",
+	"devDependencies": {
+		"@wordpress/scripts": "^26.4.0"
+		},
+	"scripts": {
+		"build": "wp-scripts build",
+		"start": "wp-scripts start",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"format:js": "wp-scripts format",
+		"bundle": "dir-archiver --src . --dest ../brantt.zip --exclude .temp .vscode .DS_Store .stylelintrc.json .stylelintrc-css.json .stylelintignore .eslintrc .editorconfig .babelrc .git .gitattributes .gitkeep .github .gitignore README.md readme.md composer.json composer.lock node_modules package-lock.json package.json .travis.yml phpcs.xml.dist style.css.map yarn.lock webpack.config.js",
+		"packages-update": "wp-scripts packages-update"
+	}
+}
+
